@@ -1,0 +1,12 @@
+name: camcam.cc_Scraper
+type: web
+version: 1.0.0
+routes:
+  - path: /
+    port: 3000
+build:
+  commands:
+    - python setup.py build  # Install dependencies
+    - python setup.py install  # Build your project (optional, based on project type)
+run:
+  command: python src/main.py  # Start the application
