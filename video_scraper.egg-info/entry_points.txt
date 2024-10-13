@@ -1,0 +1,2 @@
+[console_scripts]
+video_scraper = src.main:run

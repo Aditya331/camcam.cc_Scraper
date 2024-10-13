@@ -1,0 +1,12 @@
+setup.py
+src/__init__.py
+src/db_manager.py
+src/keep_alive.py
+src/main.py
+src/scraper.py
+video_scraper.egg-info/PKG-INFO
+video_scraper.egg-info/SOURCES.txt
+video_scraper.egg-info/dependency_links.txt
+video_scraper.egg-info/entry_points.txt
+video_scraper.egg-info/requires.txt
+video_scraper.egg-info/top_level.txt

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraper Progress</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #progress {
+            width: 100%;
+            background-color: #ddd;
+        }
+        #progress-bar {
+            width: {{ progress }}%;
+            height: 30px;
+            background-color: #4caf50;
+        }
+        #log {
+            margin-top: 20px;
+            height: 300px;
+            overflow-y: scroll;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        .log-message {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scraper Progress</h1>
+    <div id="progress">
+        <div id="progress-bar"></div>
+    </div>
+    <div id="log">
+        {% for message in log_messages %}
+            <div class="log-message">{{ message }}</div>
+        {% endfor %}
+    </div>
+    <script>
+        setInterval(function(){
+            location.reload();
+        }, 3000);  // Reload the page every 3 seconds to update progress and logs
+    </script>
+</body>
+</html>
+    
